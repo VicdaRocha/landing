@@ -1,0 +1,49 @@
+body {
+    color: #1E2323;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+    color: black;
+}
+
+.nav>li>a {
+    color: black;
+}
+
+.nav>li>a:hover {
+    color: white;
+}
+
+.container>.row>.photo-wrapper>img {
+    border-radius: 5%;
+}
+
+.stick {
+    margin-top: auto;
+}
+
+.background-transition {
+    background: radial-gradient(circle at 100%, #CEA607, #CEA607 5%, #7B7B79 40%, #FBEDB6 85%);
+    background-size: 500% 500%;
+    animation: backgroundTransition 15s ease-in-out infinite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position: 20% 80%;
+    }
+
+    50% {
+        background-position: 80% 100%;
+    }
+
+    100% {
+        background-position: 10% 90%;
+    }
+}
